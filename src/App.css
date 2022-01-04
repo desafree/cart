@@ -1,38 +1,231 @@
-.App {
-  text-align: center;
+*,*:link,*:visited,*::after,*::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,html,#root{
+    height: 100%;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+    font-size: 62.5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a:link, a:visited{
+    text-decoration: none;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-home{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.808), rgba(255, 255, 255, 0.747)), url('./img/wp6802937-ps5-4k-pictures-wallpapers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.navigation{
+    margin: 0 auto;
+    padding-top: 3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    top: 2.5rem;
+    left: 2.5rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoContainer{
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+a{
+    transition: all .2s;
+}
+
+a:not(:last-child) {
+    margin-right: 2rem;
+}
+
+a:hover{
+    color: #033d95;
+    text-shadow: 0 1rem 4rem #033d95b2;
+}
+
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+.text-box p{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border: 3px solid #14182c;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #14182c;
+    padding: 1rem 4rem;
+    border-radius: 4px;
+    transition: all .2s;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.61);
+}
+
+button:hover{
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    box-shadow: 0 1rem 4rem #033d95b2;
+
+}
+
+.prodCont{
+    background-image: linear-gradient(to bottom, #14182c,#033d95);
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+
+.prodMenu{
+    display: flex;
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.61);
+    height: 100%;
+    
+}
+
+.productContainer{
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.274);
+    margin: 3rem;
+    border: 3px solid rgba(255, 255, 255, 0.178);
+    box-shadow: 0 1rem 4rem #033d95b2;
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.productContainer:hover{
+    border: 3px solid white;
+    box-shadow: 0 1rem 4rem rgba(255, 255, 255, 0.623);
+    transform: scale(1.1);
+}
+
+.productContainer h3{
+    font-size: 3rem;
+}
+
+.addToCart:active {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 4rem orange;
+    color: orange;
+}
+
+.navButtom{
+    border: 3px solid white;
+    
+}
+
+.navButtom:hover{
+    background-color: orange;
+}
+
+h4{
+    font-size: 2.5rem;
+}
+
+.cartContainer{
+    background-color: #e1e1e2;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.cartBoxes{
+    width: 60%;
+    margin: 8rem auto 0rem;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cartBox {
+    margin-bottom: 2rem;
+    display: block;
+    padding: 5rem;
+
+}
+
+.cartBox img{
+    height: 50%;
+}
+
+.cartBox h3{
+    font-size: 3rem;
+}
+
+.plus,.minus{
+    font-size: 2rem;
+}
+
+.plus{
+    margin-right: 4rem;
+    margin-top: 3rem;
+}
+
+.plus:hover, .minus:hover{
+    background-color: orange;
+}
+
+.total{
+    font-size: 4rem;
+    color: orange;
+    display: block;
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
 }
