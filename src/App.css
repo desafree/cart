@@ -122,6 +122,7 @@ button:hover{
     background-image: linear-gradient(to bottom, #14182c,#033d95);
     background-repeat: no-repeat;
     height: 100%;
+    overflow: hidden;
 
 }
 
@@ -147,11 +148,17 @@ button:hover{
     gap: 2rem;
 }
 
+.productContainer img{
+    width: 50%;
+}
+
 .productContainer:hover{
     border: 3px solid white;
     box-shadow: 0 1rem 4rem rgba(255, 255, 255, 0.623);
     transform: scale(1.1);
 }
+
+
 
 .productContainer h3{
     font-size: 3rem;
