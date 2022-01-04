@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cart/static/css/main.3d0cf172.css",
+    "main.js": "/cart/static/js/main.75c41afe.js",
+    "static/media/wp6802937-ps5-4k-pictures-wallpapers.jpg": "/cart/static/media/wp6802937-ps5-4k-pictures-wallpapers.f9bba26bc15b82dc27e8.jpg",
+    "index.html": "/cart/index.html",
+    "main.3d0cf172.css.map": "/cart/static/css/main.3d0cf172.css.map",
+    "main.75c41afe.js.map": "/cart/static/js/main.75c41afe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d0cf172.css",
+    "static/js/main.75c41afe.js"
+  ]
+}
